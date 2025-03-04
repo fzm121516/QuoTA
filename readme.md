@@ -2,7 +2,8 @@
 
 ## 😮 Highlights
 
-![Uploading introductionv2_01.png…]()
+
+![introductionv2_01](https://github.com/user-attachments/assets/f568fcc0-bf46-41d0-a0cf-bd30745069ab)
 
 
 - **We design a versatile plug-and-play pipeline for existing LVLMs:** QuoTA provides a training-free solution applicable to diverse LVLMs, enhancing long video understanding performance by assigning visual tokens based on text instruction (query) relevance. This approach offers a more elegant and direct methodology compared to conventional attention-based analytical techniques.
@@ -11,6 +12,7 @@
 
 ![framework_01](https://github.com/user-attachments/assets/ff04dec6-a4d2-4032-aae5-276e5a681439)
 
+![results](https://github.com/user-attachments/assets/1f432dc1-0486-4274-b1d6-641fb20bbc8e)
 
 
 
