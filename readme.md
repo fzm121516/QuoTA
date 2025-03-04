@@ -2,13 +2,15 @@
 
 ## 😮 Highlights
 
-![introductionv2_01](https://github.com/user-attachments/assets/0a5ff15d-99ca-4e11-bfce-81e042756e7b)
+![Uploading introductionv2_01.png…]()
+
 
 - **We design a versatile plug-and-play pipeline for existing LVLMs:** QuoTA provides a training-free solution applicable to diverse LVLMs, enhancing long video understanding performance by assigning visual tokens based on text instruction (query) relevance. This approach offers a more elegant and direct methodology compared to conventional attention-based analytical techniques.
 - **We propose CoT-driven query decouple for query-oriented frame scoring:** QuoTA employs Chain-of-Thoughts to decouple query into a specific-designed question, enabling high-quality scoring of video frames.
 - **Our QuoTA setting a new state-of-the-art:** Integration of QuoTA with LLaVA-Video-7B yields a 3.2% average performance improvement across six benchmarks, achieving the best results in five video benchmarks, including Video-MME and MLVU, among 7B LVLMs.
 
-![framework_01](https://github.com/user-attachments/assets/3bc9af37-fda7-49cf-b981-d793cf120cd9)
+![framework_01](https://github.com/user-attachments/assets/ff04dec6-a4d2-4032-aae5-276e5a681439)
+
 
 
 
