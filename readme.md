@@ -34,7 +34,7 @@ pip install qwen-vl-utils
 
 - Step 2: Replace the file under `LLaVA-NeXT/llava/model/llava_arch.py` with `core/llava_arch.py`: 
 
-- Step 3: Copy the file `merge.py` under ``LLaVA-NeXT/llava/model/`
+- Step 3: Copy the file `core/merge.py` under `LLaVA-NeXT/llava/model/`
 
 - Step 4: Move all our code under `LLaVA-NeXT` (`tools/` and `quota_pipeline.py`)
 
