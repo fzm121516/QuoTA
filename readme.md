@@ -36,7 +36,7 @@ pip install qwen-vl-utils
 
 - Step 3: Copy the file `core/merge.py` under `LLaVA-NeXT/llava/model/`
 
-- Step 4: Move all our code under `LLaVA-NeXT` (`tools/` and `quota_pipeline.py`)
+- Step 4: Move all our code (`tools/` and `quota_pipeline.py`) under the root dir (`LLaVA-NeXT`) of LLaVA-NeXT 
 
 - Step 5: You can now run our pipeline build upon LLaVA-Video-7B by:
 
