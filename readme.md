@@ -1,5 +1,7 @@
 ## QuoTA: Query-oriented Token Assignment via CoT Query Decouple for Long Video Comprehension
 
+[[📖 QuoTA Paper]](QuoTA_paper.pdf). The arxiv version will be released, stay tuned!
+
 ## 😮 Highlights
 
 
