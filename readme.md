@@ -1,6 +1,9 @@
 ## QuoTA: Query-oriented Token Assignment via CoT Query Decouple for Long Video Comprehension
 
-[[📖 QuoTA Paper]](QuoTA_paper.pdf). The arxiv version will be released, stay tuned!
+[![Arxiv](https://img.shields.io/badge/Arxiv-2411.13093-red)](https://arxiv.org/abs/2503.08689)
+![](https://img.shields.io/badge/Task-VideoQA-blue)
+
+<font size=7><div align='center' >[[📖 arXiv Paper](https://arxiv.org/abs/2503.08689)]  </div></font>
 
 ## 😮 Highlights
 
