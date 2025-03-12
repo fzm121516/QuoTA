@@ -15,7 +15,7 @@ from llava.mm_utils import get_anyres_image_grid_shape
 from llava.utils import rank0_print, rank_print
 import random
 import numpy as np
-from llava.model.merge import bipartite_soft_matching, merge_wavg
+from llava.model.merge import kth_bipartite_soft_matching, merge_wavg
 
 
 class LlavaMetaModel:
@@ -356,7 +356,7 @@ class LlavaMetaForCausalLM(ABC):
                     current_feature = img_h
                     while current_feature.shape[1] > target_width:
                         r = current_feature.shape[1] - target_width
-                        merge_func, _ = bipartite_soft_matching(current_feature, r, class_token=False, distill_token=False)
+                        merge_func, _ = kth_bipartite_soft_matching(current_feature, r)
                         current_feature, _ = merge_wavg(merge_func, current_feature)  # [1, target_height, 3584]
 
                     tmp_list.append(current_feature.squeeze(0))  # [target_height, 3584]
