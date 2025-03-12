@@ -356,7 +356,7 @@ class LlavaMetaForCausalLM(ABC):
                     current_feature = img_h
                     while current_feature.shape[1] > target_width:
                         r = current_feature.shape[1] - target_width
-                        merge_func, _ = kth_bipartite_soft_matching(current_feature, r)
+                        merge_func, _ = bipartite_soft_matching(current_feature, r, class_token=False, distill_token=False)
                         current_feature, _ = merge_wavg(merge_func, current_feature)  # [1, target_height, 3584]
 
                     tmp_list.append(current_feature.squeeze(0))  # [target_height, 3584]
@@ -369,7 +369,7 @@ class LlavaMetaForCausalLM(ABC):
                     current_feature = img_w
                     while current_feature.shape[1] > target_height:
                         r = current_feature.shape[1] - target_height
-                        merge_func, _ = kth_bipartite_soft_matching(current_feature, r)
+                        merge_func, _ = bipartite_soft_matching(current_feature, r, class_token=False, distill_token=False)
                         current_feature, _ = merge_wavg(merge_func, current_feature)  # [1, target_width, 3584]
 
                     tmp_list.append(current_feature.squeeze(0))
