@@ -5,6 +5,8 @@ from torchvision import io
 from typing import Dict
 from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
 
+max pixels = 1280*28*28
+
 # Load the model in half-precision on the available device(s)
 model = Qwen2VLForConditionalGeneration.from_pretrained(
     "Qwen/Qwen2-VL-2B-Instruct",  
@@ -12,7 +14,7 @@ model = Qwen2VLForConditionalGeneration.from_pretrained(
     attn_implementation="flash_attention_2",
     device_map="auto"
 )
-processor = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct")
+processor = AutoProcessor.from_pretrained("Qwen/Qwen2-VL-2B-Instruct", max_pixels=max_pixels)
 
 
 def frame_retrieve(frames, query_relation):
