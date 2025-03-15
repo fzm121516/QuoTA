@@ -50,3 +50,17 @@ python quota_pipeline.py
 ```
 
 - Note that you can also use our pipeline for other LVLMs.
+
+
+## ✏️ Citation
+
+If you find our paper and code useful in your research, please consider giving a star ⭐ and citation 📝:
+
+```
+@inproceedings{Luo2025QuoTAQT,
+  title={QuoTA: Query-oriented Token Assignment via CoT Query Decouple for Long Video Comprehension},
+  author={Yongdong Luo and Wang Chen and Xiawu Zheng and Weizhong Huang and Shukang Yin and Haojia Lin and Chaoyou Fu and Jinfa Huang and Jiayi Ji and Jiebo Luo and Rongrong Ji},
+  year={2025},
+  url={https://api.semanticscholar.org/CorpusID:276929450}
+}
+```
