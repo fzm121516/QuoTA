@@ -57,10 +57,10 @@ python quota_pipeline.py
 If you find our paper and code useful in your research, please consider giving a star ⭐ and citation 📝:
 
 ```
-@inproceedings{Luo2025QuoTAQT,
+@article{luo2025quota,
   title={QuoTA: Query-oriented Token Assignment via CoT Query Decouple for Long Video Comprehension},
-  author={Yongdong Luo and Wang Chen and Xiawu Zheng and Weizhong Huang and Shukang Yin and Haojia Lin and Chaoyou Fu and Jinfa Huang and Jiayi Ji and Jiebo Luo and Rongrong Ji},
-  year={2025},
-  url={https://api.semanticscholar.org/CorpusID:276929450}
+  author={Luo, Yongdong and Chen, Wang and Zheng, Xiawu and Huang, Weizhong and Yin, Shukang and Lin, Haojia and Fu, Chaoyou and Huang, Jinfa and Ji, Jiayi and Luo, Jiebo and others},
+  journal={arXiv preprint arXiv:2503.08689},
+  year={2025}
 }
 ```
