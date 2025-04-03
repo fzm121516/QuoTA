@@ -1,3 +1,34 @@
+CUDA_VISIBLE_DEVICES=1 python3 quota_pipeline.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## QuoTA: Query-oriented Token Assignment via CoT Query Decouple for Long Video Comprehension
 
 [![Arxiv](https://img.shields.io/badge/Arxiv-2411.13093-red)](https://arxiv.org/abs/2503.08689)
