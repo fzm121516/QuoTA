@@ -122,7 +122,7 @@ def llava_inference(qs, video):
 print(f"---------------Frames: {max_frames_num}-----------------")
 print("-----total: " + str(overwrite_config["enhance_total"]) + "----tokens: " + str(overwrite_config["enhance_tokens"]) + "----version: " + overwrite_config["enhance_version"] + "-----")
 video_path ="/home/ubuntu/2025/DVF_tiny/DVF_tiny/DVF_tiny/pika/1_fake/Cinematic_medium_shot_of_a_tiger_walking_in_the_jungle__soft_lighting__4k__sharp__Canon_C300__depth__seed7129231733499100_upscaled.mp4"
-data_path = "path/to/your/video"
+# data_path = "path/to/your/video"
 query = "What's the man doing on the bed? A. jumping. B. sleeping. C. eating."
 
 retrieve_pmt_0 = query 
@@ -155,7 +155,7 @@ if step1_match and step1_match.group(1) == 'yes':
         final_object = eval(step3_match.group(1))
 
 frames, frame_time, video_time, score_list = process_video_prune(video_path, max_frames_num, final_object, query, additional_frames, force_sample=True)
-
+q_num = 0  # 添加这行
 video = image_processor.preprocess(frames, return_tensors="pt")["pixel_values"].cuda().bfloat16()
 weights = [(w * weight_scale[0]) ** weight_scale[1] for w in score_list[q_num]]
 video = [[video], weights]
